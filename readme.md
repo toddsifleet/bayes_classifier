@@ -1,7 +1,7 @@
 Naive Bayes Classifier
 =============
 
-A naive bayes classifier implemented in python. 
+A naive bayes classifier implemented in python. This is a simple implementation in about 70 sloc including a persistence layer that allows you to save and reload your classifier.
 
 Usage
 -------
@@ -18,7 +18,10 @@ Usage
 		...
 	]
 	classifier.train(data)
-
+	
+	#you can save the data for later
+	classifier.save('demo.bayes')
+	
 	print classifier.classify('this is a test string')
 
 License:
